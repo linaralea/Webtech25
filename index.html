@@ -2,10 +2,107 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- die nachste zeile ist im head mit attribute -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Erste HTML-Seite</title>
 </head>
 <body>
-    hallo FIW! God help me please
+    <header> <!--HEADER(Container Element) KOPFZEILE; WICHTIG FUR STRUKTURIERUNG-->
+    <!-- h1 ist die groesste uberschriftsart -->
+  <h1>Willkommen zu meiner ersten HTML-Seite!</h1>  
+  <h2>etwas kleinere Überschrift</h2>
+  <h3>noch kleinere</h3>
+  <h4>noch noch noch</h4>
+  <h5>noch noch</h5>
+  <h6>am kleinsten</h6>
+</header>
+  <p>hier ist ein Absatz.</p>
+  <!-- kein umbruch sondern ein satz , also nicht wirklich absatz-->
+  <p></p>
+  <!-- <p id="p1" class="rotHG gelbFont kursiv">hier ist ein ABsatz.<p/>-->
+  <h1>ha ha</h1>
+  <!-- a href ist ein hyperlink und der attribut linkt zu einer andere html seite , normal steht schon in meine zeile -->
+<a href="https://www.htw-berlin.de">HTW-Berlin</a>
+<!-- als resultat: steht HTW BERLIN untersctrichen in blau und wenn man da klingt ist der link zur uni website-->
+
+<a href="./html/seite1.html">Seite1</a>"
+<!-- change directories zu seite seite 1 -->
+
+
+<img src="./images/fiw-logo.jpg" alt="FIW-Logo" width="100">
+<!-- <img src=":/images/fiw.jpg" alt="FIW-Logo" width="200" height="100">  weight und height schon css--> 
+ <!-- <img src=":/images/fiw.jpg" alt="FIW-Logo" width="200" /> als pixel ausgegeben --> 
+<!-- img = image, danaxh kommt den pfad fur bild datei -->
+<!-- alt = bildbeschreibung, stane alone tag = kein schliesstag, steht fur sich, hat kein inhalt, weil der inhalt ist das bild selbst -->
+
+
+<!--AB HIER unnummerierte LISTS  -->
+<ul>
+    <li>erster Punkt</li> 
+<!-- ° erster Punkt-->
+    <li>zweier Punkt</li>
+</ul>
+
+<!--AB HIER nummerierte LISTS  -->
+<ol>
+    <li>eins</li>
+    <!-- 1.eins  -->
+    <li><h1>zwei</h1></li>
+    <li>drei
+    <ul>
+        <li>Unterpunkt 1</li>
+        <li> Unterpunkt 2</li>
+    </ul>
+</li>
+<li>vier</li>
+</ol>
+
+<!--AB HIER TABELLEN  -->
+<table>
+
+    <thead>
+        <tr>
+            <th>SpalteÜberschrift1 </th>
+            <th>Spalte2</th>
+            <th>Spalte3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!--tr table row   -->
+        <tr>
+            <!--td tabellen daten = tabellenzeile-->
+            <td>eins eins</td>
+            <td>eins zwei</td>
+            <td>eins drei</td>
+        </tr>
+        <tr>
+            <td>zwei eins</td>
+            <td>zwei zwei</td>
+            <td>zwei drei</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td></td> <!-- hier dritte zeile zweite spalte ist leer-->
+            <td>3</td>
+        </tr>
+    </tbody>
+</table>
+<!--BLOCKELEMENT kommt danach einen umbruch-->
+ <!--INPUT ELEMENTE; BSP TEXTFELDER, INLINE ELEMENTE IMMER!!!-->
+ <input type="text" />  <!-- hier kommt ein eingabe feld, wichtid fur log in formulare, registrierung--> <!--INLINE ELEMENT-->
+ <input type="password" />  <!-- PW IST HIDDEN ; man sieht nicht was man eingibt-->  <!--ist ein INLINE Element-->
+ <input type="checkbox" />
+ <input type="radio" /> <!-- KREIS FORM ZUM KLICKEN-->
+ <input type="button" value="Login" />
+ <input type="date" />
+ <input type="time" />
+ <input type="datetime-local" /> <!--datum und zeit zusammen-->
+ <input type="submit" />
+ <input type="email" />
+ <input type="range" min="0" max="100" value="80"/>
+ <input type="color" />
+ <input type="number" />
+ <input type="reset" />
+
 </body>
 </html>
