@@ -1,0 +1,54 @@
+
+       * {
+        text-transform: Verdana;
+       
+       }
+       header {
+        /*HEX - Nummer!*/
+            background-color: #AFAFAFAF;
+            color: #FF5F00;
+            text-align: center;
+           
+          
+        }
+       table{
+            box-shadow: grey;
+            border-collapse: collapse;
+            box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+            width: 60px;
+          }
+       thead th {
+             background-color: #76B900; 
+             color: white; 
+             padding: 10px;
+             border: 1px solid black;
+        }
+       td {
+         border: 1px solid black;
+        padding: 10px;
+       }
+       a {
+     background-color: #0082D1;
+     color: white; /*Schrift color*/
+     font-weight: bold; /*Schriftart*/
+     border: 1px solid grey;
+     border-radius: 5px; /*abgerundetete Ecken*/
+     padding: 10px;
+     display: inline-Block;
+     text-decoration: none;
+
+    }
+     nav a:hover {
+        background-color: #AFAFAF;
+        color: #FF5F00;
+ }
+ footer{
+    background-color:#FF5F00;
+    text-emphasis-color: black;
+    text-align: center;
+  font-size: 10px; /*schriftart kleiner*/
+  padding-top: 20px;
+  padding-bottom: 20px;
+ }
+ 
+  

@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <!-- die nachste zeile ist im head mit attribute -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erste HTML-Seite</title>
+    <title>Webtech erste Ubung</title>
+<!-- Einbinden von CSS per externer css-Datei--> 
+    <link href="./styles/mystyles.css" rel="stylesheet">
 </head>
 <body>
 
@@ -14,7 +16,7 @@
 </header>
 
 <nav>
-    <a href="../NN/NN.html">ALLE A-G H-L M-R S-Z</a> <a href="https://www.htw-berlin.de/">Startseite</a>"
+    <a href="../NN/NN.html">ALLE</a> <a href="../NN/ag.html">A-G</a> <a href="../NN/hl.html"> H-L</a> <a href="../NN/mr.html">M-R</a> <a href="../NN/sz.html">S-Z</a> <a href="https://www.htw-berlin.de/">Startseite</a>
 </nav>
 
 <section>
@@ -339,19 +341,22 @@
     </table>
 </section>
 
-<footer>
+<!--<footer>
     <p></p>
-        <a href="../NN/NN.html">Nachnamen</a>"
+        <a href="../NN/NN.html">Nachnamen</a>
 <p></p>
-<a href="../NN/ag.html">Nachnamen A-G</a>"
+<a href="../NN/ag.html">Nachnamen A-G</a>
 <p></p>
-<a href="../NN/hl.html">Nachnamen H-L</a>"
+<a href="../NN/hl.html">Nachnamen H-L</a>
 <p></p>
-<a href="../NN/mr.html">Nachnamen M-R</a>"
+<a href="../NN/mr.html">Nachnamen M-R</a>
 <p></p>
-<a href="../NN/sz.html">Nachnamen S-Z</a>"
+<a href="../NN/sz.html">Nachnamen S-Z</a>
 
 
+</footer>!-->
+<footer>
+    <h4>Jörn Freiheit - Aufgabe 2</h4>
 </footer>
 </body>
 </html>

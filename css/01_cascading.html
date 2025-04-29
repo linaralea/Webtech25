@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- die nachste zeile ist im head mit attribute -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascading</title>
+    <link rel="stylesheet" href="../styles/masteyles.css"> <!--extra per link css definiert-->
+    <!--Uberschrift wird jetzt in klein geschrieben in style absatz-->
+    <style>
+        h1 {
+            text-transform:lowercase; /*CSS-Kommentare als Block-Kommentare*/
+            font-style: italic;
+        }
+        h2{
+            color: blue; /* Alle h2 Uberschriften sind jetzt blau, die gleichen eigenschaften fur alle h2 uberschriften*/
+        }
+        article{
+           color:blue; /*hier werden die absatze in blua geschrieben*/
+        }
+        ul{
+            color:aqua;
+        }
+        ol{
+            color:yellow;
+        }
+
+        .fgYellow{
+            color:yellow;
+        }
+        .bgBrown{
+            background-color:aliceblue;
+            font-size: 2em;
+        }
+        #firstH2{
+            text-decoration:underline;
+        }
+        article p{ /*alle article die ein p inhalten*/
+                color:brown;
+        }
+        section>p{/*alle <p>-Elemente deren direkte Eltern ein <section>-Element sind (Kinder)*/
+                color: blueviolet;
+        }
+        a {
+            text-decoration:none;/*nicht mehr underlined*/
+        }
+        a:hover{ /*pseudo-klasse*/
+                backround-color: blue;
+                color:white;
+        }
+        p::first-letter{
+            font-size: 3em;
+        }
+    </style>
+    <!--wenn es elemente untereinenader dasrselbe art liegen, oder in darselben absatz liegen,
+     werden die cascadiert und bekommen alle eigenschaften gleich-->
+</head>
+<body>
+    <header>
+        <h1> Cascading Style Sheets - CSS</h1>
+    </header>
+    <main>
+        <section>
+
+        </section>
+    </main>
+
+    </body>
+    </html>
