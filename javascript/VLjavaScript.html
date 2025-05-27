@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+    <style>
+        * {
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 onmouseover="changeColor()">Überschrift</h1> <!--uberschrift wurde das attribut "onmouseover" zugeordnet, bewegt sicg die maus uber die uberschrift, wird diese ereignis ausgelöst und die function changeColor() aufegrufen-->
+    <button type="button" onclick="myFunction1()">Klick mich</button><!--wenn click gecklickt, dann die funkion myFunction() aufgerufen-->
+    <div id="demo1"></div>
+    <input id="input1" type="text" placeholder="Gibt etwas ein" onkeyup="myFunction2()"/> <!--attribut "onkeyup" wird ausgelöst, wenn die taste losgelassen wird, durch das Auslösen diese ereignisses wird die javafunction myFunction2() aufgerufen -->
+    <!---->
+    <div id="demo2"></div>
+    <script>
+        function myFunction1() {
+            document.getElementById("demo1").innerHTML = "Hallo FIW!"; //diese funktion lokalisiert das element mit der id demo1 und weist ihm einen neuen html-inhalt zu, hier  Hallo FIW!
+        }
+
+        function myFunction2() { //die function lokalisiert das element mit der id demo2 und mit value weist ihm einen neuen html wert, der in das eingabefeld mit der id input1 eingegeben wurde
+            document.getElementById("demo2").innerHTML = document.getElementById("input1").value;
+        }
+
+        function changeColor() {//die funktion lokalisiert erst die h1 elemente, speichert sie im array "h1arr". da die uberschrift die erste ist, ist am index 0 zu finden, und mit zugreifen index 0 auf dieses element im array h1arr andern wir die schriftfarbe im rot
+            var h1arr = document.getElementsByTagName('h1');
+            h1arr[0].style.color = "red";
+        }
+    </script>
+</body>
+</html>
